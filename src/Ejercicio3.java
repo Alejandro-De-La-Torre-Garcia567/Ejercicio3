@@ -1,25 +1,20 @@
-import java.util.Scanner;
+import es.usal.progiii.tools.*;
 
 
-public class Ejercicio3 {
-    
-    public static void main(String [] args){
+public class Ejercicio3{
 
-        System.out.printf("Introduzca un numero entero mayor de cero: ");
+    public static void main(String[] args){
 
-        Scanner s= new Scanner(System.in);
+        int n=Esdia.readInt("Introduce la cantidad de números que quieres introducir para hacer la media: ");
 
-        int N=s.nextInt();
-
-        while(N<=0){
-
-        int N=s.nextInt();
-
-            System.err.printf("El numero introducido no es valido, introduzca un numero entero mayor de cero: ");
+        while(n<=0){
+            n=Esdia.readInt("El número debe ser mayor que 0: ");
 
 
         }
 
+        
 
     }
+
 }
