@@ -22,8 +22,7 @@ public class Ejercicio3{
 
         for(int i=0;i<n;i++){
 
-            System.out.printf("Valor %d\n",i+1);
-            suma+=Esdia.readDouble("\0");
+            suma+=Esdia.readDouble("Introduce el número "+(i+1)+": ");
         }
 
         media=suma/(double)n;
