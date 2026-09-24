@@ -8,13 +8,26 @@ public class Ejercicio3{
         int n=Esdia.readInt("Introduce la cantidad de números que quieres introducir para hacer la media: ");
 
         while(n<=0){
+
+            System.err.printf("El número introducido no es válido, debe ser mayor que 0.\n");
             n=Esdia.readInt("El número debe ser mayor que 0: ");
 
 
         }
 
-        
+        System.out.printf("Introduce los numeros para calcular la media \n");
 
+        double media=0;
+        double suma=0;
+
+        for(int i=0;i<n;i++){
+
+            System.out.printf("Valor %d\n",i+1);
+            suma+=Esdia.readDouble();
+        }
+
+        media=suma/(double)n;
+        System.out.printf("La media es: %.2f\n", media);
     }
 
 }
